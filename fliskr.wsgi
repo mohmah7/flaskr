@@ -1,14 +1,14 @@
-from yourapplication import app as application
+from flasker import app as application
 
 
 <VirtualHost *>
-    ServerName 35.158.80.91
+    ServerName 3.121.195.199
 
-    WSGIDaemonProcess fliskr user=user1 group=group1 threads=5
-    WSGIScriptAlias / /var/www/fliskr/fliskr.wsgi
+    WSGIDaemonProcess flasker user=user1 group=group1 threads=5
+    WSGIScriptAlias / /var/www/flasker/fliskr.wsgi
 
-    <Directory /var/www/fliskr>
-        WSGIProcessGroup fliskr
+    <Directory /var/www/flasker>
+        WSGIProcessGroup flasker
         WSGIApplicationGroup %{GLOBAL}
         Order deny,allow
         Allow from all
