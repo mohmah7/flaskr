@@ -2,13 +2,13 @@ from yourapplication import app as application
 
 
 <VirtualHost *>
-    ServerName example.com
+    ServerName 35.158.80.91
 
-    WSGIDaemonProcess yourapplication user=user1 group=group1 threads=5
-    WSGIScriptAlias / /var/www/yourapplication/yourapplication.wsgi
+    WSGIDaemonProcess fliskr user=user1 group=group1 threads=5
+    WSGIScriptAlias / /var/www/fliskr/fliskr.wsgi
 
-    <Directory /var/www/yourapplication>
-        WSGIProcessGroup yourapplication
+    <Directory /var/www/fliskr>
+        WSGIProcessGroup fliskr
         WSGIApplicationGroup %{GLOBAL}
         Order deny,allow
         Allow from all
