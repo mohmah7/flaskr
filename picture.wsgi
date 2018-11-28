@@ -1,1 +1,1 @@
-from picture import app as application
+from picture import hello_world as application
