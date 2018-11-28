@@ -1,6 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/picture')
+#@app.route('/picture')
 def hello_world():
     return 'Hello, World!'
