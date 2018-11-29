@@ -1,0 +1,17 @@
+[Thu Nov 29 06:25:02.933776 2018] [mpm_event:notice] [pid 4542:tid 140165737401280] AH00489: Apache/2.4.29 (Ubuntu) mod_wsgi/4.5.17 Python/2.7 configured -- resuming normal operations
+[Thu Nov 29 06:25:02.933802 2018] [core:notice] [pid 4542:tid 140165737401280] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Nov 29 07:46:55.230174 2018] [mpm_event:notice] [pid 4542:tid 140165737401280] AH00491: caught SIGTERM, shutting down
+[Thu Nov 29 07:46:55.350669 2018] [mpm_event:notice] [pid 6715:tid 140489657396160] AH00489: Apache/2.4.29 (Ubuntu) mod_wsgi/4.5.17 Python/2.7 configured -- resuming normal operations
+[Thu Nov 29 07:46:55.350743 2018] [core:notice] [pid 6715:tid 140489657396160] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Nov 29 07:47:07.141295 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6948] mod_wsgi (pid=6721): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 07:47:07.141344 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6948] mod_wsgi (pid=6721): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 07:47:07.141360 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6948] Traceback (most recent call last):
+[Thu Nov 29 07:47:07.141375 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6948]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 07:47:07.141421 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6948]     from flasker import  app as application
+[Thu Nov 29 07:47:07.141438 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6948] ImportError: No module named flasker
+[Thu Nov 29 07:47:36.132350 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925] mod_wsgi (pid=6720): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 07:47:36.132389 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925] mod_wsgi (pid=6720): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 07:47:36.132403 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925] Traceback (most recent call last):
+[Thu Nov 29 07:47:36.132418 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 07:47:36.132456 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925]     from flasker import  app as application
+[Thu Nov 29 07:47:36.132471 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925] ImportError: No module named flasker
