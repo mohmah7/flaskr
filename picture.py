@@ -8,7 +8,7 @@ def hello_world():
 <title>Hello, World! From Egypt' </title>
 </head>
 <body>
-<h1>  The numbers are  </h1>
+<h1> Hello, World! From Egypt </h1>
 <hr>
 <FORM value="form" action="index" method="post">
    <P>
