@@ -15,3 +15,24 @@
 [Thu Nov 29 07:47:36.132418 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925]   File "/var/www/hello.wsgi", line 4, in <module>
 [Thu Nov 29 07:47:36.132456 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925]     from flasker import  app as application
 [Thu Nov 29 07:47:36.132471 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6925] ImportError: No module named flasker
+[Thu Nov 29 08:22:34.145258 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6987] mod_wsgi (pid=6721): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 08:22:34.145290 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6987] mod_wsgi (pid=6721): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 08:22:34.145320 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6987] Traceback (most recent call last):
+[Thu Nov 29 08:22:34.145346 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6987]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 08:22:34.145420 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6987]     from flaskr import  app as application
+[Thu Nov 29 08:22:34.145441 2018] [wsgi:error] [pid 6721:tid 140489541338880] [remote 196.159.33.115:6987] ImportError: No module named flaskr
+[Thu Nov 29 08:22:54.314638 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6964] mod_wsgi (pid=6720): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 08:22:54.314671 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6964] mod_wsgi (pid=6720): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 08:22:54.314701 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6964] Traceback (most recent call last):
+[Thu Nov 29 08:22:54.314722 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6964]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 08:22:54.314780 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6964]     from flaskr import  app as application
+[Thu Nov 29 08:22:54.314799 2018] [wsgi:error] [pid 6720:tid 140489440626432] [remote 196.159.33.115:6964] ImportError: No module named flaskr
+[Thu Nov 29 08:30:00.896810 2018] [mpm_event:notice] [pid 6715:tid 140489657396160] AH00491: caught SIGTERM, shutting down
+[Thu Nov 29 08:30:01.013663 2018] [mpm_event:notice] [pid 7709:tid 140278830840768] AH00489: Apache/2.4.29 (Ubuntu) mod_wsgi/4.5.17 Python/2.7 configured -- resuming normal operations
+[Thu Nov 29 08:30:01.013738 2018] [core:notice] [pid 7709:tid 140278830840768] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Nov 29 08:30:05.567211 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978] mod_wsgi (pid=7715): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 08:30:05.567268 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978] mod_wsgi (pid=7715): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 08:30:05.567284 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978] Traceback (most recent call last):
+[Thu Nov 29 08:30:05.567299 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 08:30:05.567338 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978]     from flaskr import  app as application
+[Thu Nov 29 08:30:05.567355 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978] ImportError: No module named flaskr
