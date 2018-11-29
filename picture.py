@@ -10,11 +10,6 @@ def hello_world():
 <body>
 <h1> Hello, World! From Egypt </h1>
 <hr>
-<FORM value="form" action="index" method="post">
-   <P>
-	 <INPUT type="submit" value="Return to index page">
-   </P>
-</FORM>
 </body>
 </html>
 """
