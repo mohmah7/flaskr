@@ -36,3 +36,21 @@
 [Thu Nov 29 08:30:05.567299 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978]   File "/var/www/hello.wsgi", line 4, in <module>
 [Thu Nov 29 08:30:05.567338 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978]     from flaskr import  app as application
 [Thu Nov 29 08:30:05.567355 2018] [wsgi:error] [pid 7715:tid 140278706390784] [remote 196.159.33.115:6978] ImportError: No module named flaskr
+[Thu Nov 29 08:48:45.468510 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:6995] mod_wsgi (pid=8017): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 08:48:45.468570 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:6995] mod_wsgi (pid=8017): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 08:48:45.468593 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:6995] Traceback (most recent call last):
+[Thu Nov 29 08:48:45.468609 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:6995]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 08:48:45.468648 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:6995]     from flaskr import  app as application
+[Thu Nov 29 08:48:45.468664 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:6995] ImportError: No module named flaskr
+[Thu Nov 29 08:54:54.990553 2018] [wsgi:error] [pid 8018:tid 140278681212672] [remote 196.159.33.115:6954] mod_wsgi (pid=8018): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 08:54:54.990594 2018] [wsgi:error] [pid 8018:tid 140278681212672] [remote 196.159.33.115:6954] mod_wsgi (pid=8018): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 08:54:54.990614 2018] [wsgi:error] [pid 8018:tid 140278681212672] [remote 196.159.33.115:6954] Traceback (most recent call last):
+[Thu Nov 29 08:54:54.990630 2018] [wsgi:error] [pid 8018:tid 140278681212672] [remote 196.159.33.115:6954]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 08:54:54.990674 2018] [wsgi:error] [pid 8018:tid 140278681212672] [remote 196.159.33.115:6954]     from __init__ import  app as application
+[Thu Nov 29 08:54:54.990694 2018] [wsgi:error] [pid 8018:tid 140278681212672] [remote 196.159.33.115:6954] ImportError: cannot import name app
+[Thu Nov 29 08:55:00.310280 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970] mod_wsgi (pid=8017): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 08:55:00.310323 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970] mod_wsgi (pid=8017): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 08:55:00.310343 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970] Traceback (most recent call last):
+[Thu Nov 29 08:55:00.310359 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 08:55:00.310411 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970]     from __init__ import  app as application
+[Thu Nov 29 08:55:00.310431 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970] ImportError: cannot import name app
