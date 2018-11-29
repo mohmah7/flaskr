@@ -54,3 +54,30 @@
 [Thu Nov 29 08:55:00.310359 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970]   File "/var/www/hello.wsgi", line 4, in <module>
 [Thu Nov 29 08:55:00.310411 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970]     from __init__ import  app as application
 [Thu Nov 29 08:55:00.310431 2018] [wsgi:error] [pid 8017:tid 140278614071040] [remote 196.159.33.115:6970] ImportError: cannot import name app
+[Thu Nov 29 09:04:11.416099 2018] [wsgi:error] [pid 8018:tid 140278689605376] [remote 196.159.33.115:6938] mod_wsgi (pid=8018): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 09:04:11.416132 2018] [wsgi:error] [pid 8018:tid 140278689605376] [remote 196.159.33.115:6938] mod_wsgi (pid=8018): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 09:04:11.416153 2018] [wsgi:error] [pid 8018:tid 140278689605376] [remote 196.159.33.115:6938] Traceback (most recent call last):
+[Thu Nov 29 09:04:11.416173 2018] [wsgi:error] [pid 8018:tid 140278689605376] [remote 196.159.33.115:6938]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 09:04:11.416232 2018] [wsgi:error] [pid 8018:tid 140278689605376] [remote 196.159.33.115:6938]     from Test import  app as application
+[Thu Nov 29 09:04:11.416251 2018] [wsgi:error] [pid 8018:tid 140278689605376] [remote 196.159.33.115:6938] ImportError: cannot import name app
+[Thu Nov 29 09:04:19.222202 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:7010] mod_wsgi (pid=8017): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 09:04:19.222234 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:7010] mod_wsgi (pid=8017): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 09:04:19.222254 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:7010] Traceback (most recent call last):
+[Thu Nov 29 09:04:19.222275 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:7010]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 09:04:19.222332 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:7010]     from Test import  app as application
+[Thu Nov 29 09:04:19.222351 2018] [wsgi:error] [pid 8017:tid 140278714783488] [remote 196.159.33.115:7010] ImportError: cannot import name app
+[Thu Nov 29 09:05:44.449514 2018] [mpm_event:notice] [pid 7709:tid 140278830840768] AH00491: caught SIGTERM, shutting down
+[Thu Nov 29 09:05:44.619057 2018] [mpm_event:notice] [pid 8491:tid 140555328269248] AH00489: Apache/2.4.29 (Ubuntu) mod_wsgi/4.5.17 Python/2.7 configured -- resuming normal operations
+[Thu Nov 29 09:05:44.619140 2018] [core:notice] [pid 8491:tid 140555328269248] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Nov 29 09:06:06.113783 2018] [wsgi:error] [pid 8497:tid 140555212211968] [remote 196.159.33.115:6978] mod_wsgi (pid=8497): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 09:06:06.113823 2018] [wsgi:error] [pid 8497:tid 140555212211968] [remote 196.159.33.115:6978] mod_wsgi (pid=8497): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 09:06:06.113844 2018] [wsgi:error] [pid 8497:tid 140555212211968] [remote 196.159.33.115:6978] Traceback (most recent call last):
+[Thu Nov 29 09:06:06.113860 2018] [wsgi:error] [pid 8497:tid 140555212211968] [remote 196.159.33.115:6978]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 09:06:06.113905 2018] [wsgi:error] [pid 8497:tid 140555212211968] [remote 196.159.33.115:6978]     from Test import  app as application
+[Thu Nov 29 09:06:06.113936 2018] [wsgi:error] [pid 8497:tid 140555212211968] [remote 196.159.33.115:6978] ImportError: cannot import name app
+[Thu Nov 29 09:06:13.097374 2018] [wsgi:error] [pid 8497:tid 140555111499520] [remote 196.159.33.115:6982] mod_wsgi (pid=8497): Target WSGI script '/var/www/hello.wsgi' cannot be loaded as Python module.
+[Thu Nov 29 09:06:13.097408 2018] [wsgi:error] [pid 8497:tid 140555111499520] [remote 196.159.33.115:6982] mod_wsgi (pid=8497): Exception occurred processing WSGI script '/var/www/hello.wsgi'.
+[Thu Nov 29 09:06:13.097428 2018] [wsgi:error] [pid 8497:tid 140555111499520] [remote 196.159.33.115:6982] Traceback (most recent call last):
+[Thu Nov 29 09:06:13.097448 2018] [wsgi:error] [pid 8497:tid 140555111499520] [remote 196.159.33.115:6982]   File "/var/www/hello.wsgi", line 4, in <module>
+[Thu Nov 29 09:06:13.097475 2018] [wsgi:error] [pid 8497:tid 140555111499520] [remote 196.159.33.115:6982]     from Test import  app as application
+[Thu Nov 29 09:06:13.097493 2018] [wsgi:error] [pid 8497:tid 140555111499520] [remote 196.159.33.115:6982] ImportError: cannot import name app
