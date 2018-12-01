@@ -9,7 +9,7 @@ def application(environ, start_response):
     start_response(status, response_headers)
 
     dd=  sys.prefix
-    output += d
+    #output += d
     d= sys.path
 
     return [d]
