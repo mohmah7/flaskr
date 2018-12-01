@@ -2,7 +2,7 @@ import os
 
 from flask import Flask
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
 #def create_app(test_config=None):
     # create and configure the app
@@ -26,6 +26,12 @@ app = Flask(__name__)
      #   pass
 
     # a simple page that says hello
+    
+def create_app(test_config=None):
+    # create and configure the app
+    app = Flask(__name__, instance_relative_config=True) 
+    return app
+
 @app.route('/hello')
 def hello():
     return 'Hello, World! Good morning'
