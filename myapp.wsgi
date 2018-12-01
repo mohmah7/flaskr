@@ -8,7 +8,7 @@ def application(environ, start_response):
                         ('Content-Length', str(len(output)))]
     start_response(status, response_headers)
 
-    output +=  sys.prefix
-    output += sys.path
+    output +=  str(sys.prefix)
+    output += str(sys.path)
 
     return [output]
