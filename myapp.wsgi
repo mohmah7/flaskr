@@ -12,4 +12,4 @@ def application(environ, start_response):
     output += d
     #output += sys.path
 
-    return [output]
+    return [d]
