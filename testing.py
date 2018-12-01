@@ -25,6 +25,8 @@ def create_app(test_config=None):
         pass
 
     # a simple page that says hello
+    from . import db
+    db.init_app(app)
     
     @app.route('/hello')
     def hello():
