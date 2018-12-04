@@ -29,7 +29,7 @@ def create_subscribers():
         address = request.form['address']
         error = None
 
-        if not title:
+        if not name:
             error = 'Name is required.'
 
         if error is not None:
