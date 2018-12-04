@@ -64,7 +64,7 @@ def get_subscribers(id, check_author=True):
     return  subscribers
     
     
-@bp.route('/<int:id>/update', methods=('GET', 'POST'))
+@bp.route('/subscribers/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
     subscribers = get_post(id)
