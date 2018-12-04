@@ -15,3 +15,14 @@ CREATE TABLE post (
   body TEXT NOT NULL,
   FOREIGN KEY (author_id) REFERENCES user (id)
 );
+
+
+CREATE TABLE subscribers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  author_id INTEGER NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  address TEXT NOT NULL,
+  FOREIGN KEY (author_id) REFERENCES user (id)
+);
