@@ -47,27 +47,27 @@ def create_subscribers():
     return render_template('subscribers/create.html')
 
 
-def get_post(id, check_author=True):
-    post = get_db().execute(
+def get_subscribers(id, check_author=True):
+    subscribers = get_db().execute(
         'SELECT p.id,  name,  email, address, created, author_id, username'
-        ' FROM post p JOIN user u ON p.author_id = u.id'
+        ' FROM  subscribers p JOIN user u ON p.author_id = u.id'
         ' WHERE p.id = ?',
         (id,)
     ).fetchone()
 
-    if post is None:
+    if subscribers is None:
         abort(404, "Post id {0} doesn't exist.".format(id))
 
-    if check_author and post['author_id'] != g.user['id']:
+    if check_author and subscribers['author_id'] != g.user['id']:
         abort(403)
 
-    return post
+    return  subscribers
     
     
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
-    post = get_post(id)
+    subscribers = get_post(id)
 
     if request.method == 'POST':
         name  = request.form['name']
