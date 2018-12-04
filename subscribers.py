@@ -93,7 +93,7 @@ def update(id):
     return render_template('subscribers/update.html', subscribers=subscribers)
 
 
-@bp.route('/<int:id>/delete', methods=('POST',))
+@bp.route('/subscribers/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
     get_subscriber(id)
