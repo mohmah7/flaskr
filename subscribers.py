@@ -38,7 +38,7 @@ def create_subscribers():
             db = get_db()
             db.execute(
                 'INSERT INTO subscribers (name, email, address, author_id)'
-                ' VALUES (?, ?, ?)',
+                ' VALUES (?, ?, ?, ?)',
                 (name, email, address, g.user['id'])
             )
             db.commit()
