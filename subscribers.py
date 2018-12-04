@@ -18,3 +18,30 @@ def index():
         ' ORDER BY created DESC'
     ).fetchall()
     return render_template('subscribers/index.html', posts=posts)
+
+
+@bp.route('/create', methods=('GET', 'POST'))
+@login_required
+def create():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        address = request.form['address']
+        error = None
+
+        if not title:
+            error = 'Name is required.'
+
+        if error is not None:
+            flash(error)
+        else:
+            db = get_db()
+            db.execute(
+                'INSERT INTO post (name, email, address, author_id)'
+                ' VALUES (?, ?, ?)',
+                (name, email, address, g.user['id'])
+            )
+            db.commit()
+            return redirect(url_for('blog.index'))
+
+    return render_template('subscribers/create.html')
