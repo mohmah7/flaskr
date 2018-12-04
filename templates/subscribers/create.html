@@ -9,9 +9,9 @@
     <label for="name"> Name</label>
     <input name="name" id="name" value="{{ request.form['name'] }}" required>
     <label for="email">Email</label>
-    <textarea name="email" id="email">{{ request.form['email'] }}</textarea>
+    <input name="email" id="email" value= "{{ request.form['email'] }}"/>
     <label for="address"> Address</label>
-    <textarea name="address" id="ddress">{{ request.form['address'] }}</textarea>
+    <input name="address" id="ddress" value="{{ request.form['address'] }}"/>
     <input type="submit" value="Save">
   </form>
 {% endblock %}
