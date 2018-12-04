@@ -9,7 +9,7 @@ from flaskr.db import get_db
 bp = Blueprint('subscribers', __name__)
 
 
-@bp.route('/')
+@bp.route('/subscribers')
 def index():
     db = get_db()
     posts = db.execute(
@@ -20,9 +20,9 @@ def index():
     return render_template('subscribers/index.html', posts=posts)
 
 
-@bp.route('/create', methods=('GET', 'POST'))
+@bp.route('/create_subscribers', methods=('GET', 'POST'))
 @login_required
-def create():
+def create_subscribers():
     if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
