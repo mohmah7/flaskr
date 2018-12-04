@@ -20,7 +20,7 @@ def index():
     return render_template('subscribers/index.html', posts=posts)
 
 
-@bp.route('/create_subscribers', methods=('GET', 'POST'))
+@bp.route('/create', methods=('GET', 'POST'))
 @login_required
 def create_subscribers():
     if request.method == 'POST':
