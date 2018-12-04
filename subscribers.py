@@ -67,7 +67,7 @@ def get_subscribers(id, check_author=True):
 @bp.route('/subscribers/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
-    subscribers = get_post(id)
+    subscribers = get_subscribers(id)
 
     if request.method == 'POST':
         name  = request.form['name']
@@ -96,7 +96,7 @@ def update(id):
 @bp.route('/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
-    get_post(id)
+    get_subscriber(id)
     db = get_db()
     db.execute('DELETE FROM subscribers WHERE id = ?', (id,))
     db.commit()
