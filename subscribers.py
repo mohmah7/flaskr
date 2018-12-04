@@ -96,7 +96,7 @@ def update(id):
 @bp.route('/subscribers/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
-    get_subscriber(id)
+    get_subscribers(id)
     db = get_db()
     db.execute('DELETE FROM subscribers WHERE id = ?', (id,))
     db.commit()
