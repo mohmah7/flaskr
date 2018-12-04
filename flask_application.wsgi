@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '/home/ubuntu/flask_tutorial/myproject/')
 
-from flaskr import app as application
+import flaskr as application
 
 activate_this = '/ubuntu/home/flask_tutorial/myproject/venv/bin/'
 with open(activate_this) as file_:
