@@ -37,7 +37,7 @@ def create_subscribers():
         else:
             db = get_db()
             db.execute(
-                'INSERT INTO post (name, email, address, author_id)'
+                'INSERT INTO subscribers (name, email, address, author_id)'
                 ' VALUES (?, ?, ?)',
                 (name, email, address, g.user['id'])
             )
